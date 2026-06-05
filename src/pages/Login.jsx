@@ -10,10 +10,18 @@ function Login() {
 
         <form style={styles.form}>
           <label style={styles.label}>Email or Number</label>
-          <input type="text" placeholder="Enter email or mobile" style={styles.input} />
+          <input
+            type="text"
+            placeholder="Enter email or mobile"
+            style={styles.input}
+          />
 
           <label style={styles.label}>Password</label>
-          <input type="password" placeholder="Enter password" style={styles.input} />
+          <input
+            type="password"
+            placeholder="Enter password"
+            style={styles.input}
+          />
 
           <button type="submit" style={styles.primaryBtn}>
             Login
