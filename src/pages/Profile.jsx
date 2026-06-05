@@ -10,37 +10,55 @@ function Profile() {
         <section className="section">
           <div className="container">
             <div className="section-header">
-              <span>My Profile</span>
-              <h2>Account Information</h2>
+              <span>Profile</span>
+              <h2>My Account</h2>
               <p>
-                Your profile information will appear here after Firebase
-                integration.
+                Manage your personal profile information.
               </p>
             </div>
 
-            <div className="dashboard-card" style={{ maxWidth: "600px" }}>
-              <h3>Full Name</h3>
-              <p>Guest User</p>
+            <div className="dashboard-card">
+              <form className="form-grid">
+                <div className="form-group">
+                  <label>Full Name</label>
+                  <input
+                    type="text"
+                    defaultValue="Md Ismail"
+                    className="form-input"
+                  />
+                </div>
 
-              <br />
+                <div className="form-group">
+                  <label>Username</label>
+                  <input
+                    type="text"
+                    defaultValue="mdismail"
+                    className="form-input"
+                  />
+                </div>
 
-              <h3>Email</h3>
-              <p>example@gmail.com</p>
+                <div className="form-group">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    defaultValue="example@gmail.com"
+                    className="form-input"
+                  />
+                </div>
 
-              <br />
+                <div className="form-group">
+                  <label>Mobile Number</label>
+                  <input
+                    type="text"
+                    defaultValue="01XXXXXXXXX"
+                    className="form-input"
+                  />
+                </div>
 
-              <h3>Mobile Number</h3>
-              <p>01XXXXXXXXX</p>
-
-              <br />
-
-              <h3>Referral Code</h3>
-              <p>PRIME2026</p>
-
-              <br />
-
-              <h3>Status</h3>
-              <p>Inactive</p>
+                <button className="primary-btn">
+                  Update Profile
+                </button>
+              </form>
             </div>
           </div>
         </section>
