@@ -5,27 +5,55 @@ function Register() {
     <main style={styles.page}>
       <div style={styles.card}>
         <p style={styles.badge}>Prime Digital</p>
+
         <h1 style={styles.title}>Create Account</h1>
-        <p style={styles.subtitle}>Register to start using the platform.</p>
+
+        <p style={styles.subtitle}>
+          Register to start earning and access your dashboard.
+        </p>
 
         <form style={styles.form}>
-          <label style={styles.label}>Name</label>
-          <input type="text" placeholder="Enter your name" style={styles.input} />
+          <label style={styles.label}>Full Name</label>
+          <input
+            type="text"
+            placeholder="Enter full name"
+            style={styles.input}
+          />
 
           <label style={styles.label}>User Name</label>
-          <input type="text" placeholder="Choose a username" style={styles.input} />
+          <input
+            type="text"
+            placeholder="Enter username"
+            style={styles.input}
+          />
 
           <label style={styles.label}>Email or Number</label>
-          <input type="text" placeholder="Enter email or mobile" style={styles.input} />
+          <input
+            type="text"
+            placeholder="Enter email or mobile"
+            style={styles.input}
+          />
 
           <label style={styles.label}>Password</label>
-          <input type="password" placeholder="Create password" style={styles.input} />
+          <input
+            type="password"
+            placeholder="Enter password"
+            style={styles.input}
+          />
 
           <label style={styles.label}>Confirm Password</label>
-          <input type="password" placeholder="Confirm password" style={styles.input} />
+          <input
+            type="password"
+            placeholder="Confirm password"
+            style={styles.input}
+          />
 
           <label style={styles.label}>Referral Code</label>
-          <input type="text" placeholder="Enter referral code" style={styles.input} />
+          <input
+            type="text"
+            placeholder="Enter referral code (optional)"
+            style={styles.input}
+          />
 
           <button type="submit" style={styles.primaryBtn}>
             Register
@@ -104,7 +132,9 @@ const styles = {
     cursor: "pointer"
   },
   links: {
-    marginTop: 18
+    marginTop: 18,
+    display: "flex",
+    justifyContent: "center"
   },
   link: {
     color: "#ffffff",
