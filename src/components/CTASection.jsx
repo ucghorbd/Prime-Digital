@@ -1,20 +1,23 @@
 function CTASection() {
   return (
-    <section className="section cta">
-      <div className="cta__box">
-        <p className="section__eyebrow">Get Started</p>
-        <h2 className="section__title">Ready to launch your website?</h2>
-        <p className="section__subtitle">
-          Replace the demo text, add your logo, and connect Firebase later.
-        </p>
+    <section className="cta-section">
+      <div className="container">
+        <div className="cta-box">
+          <h2>Start Earning Today</h2>
+          <p>
+            Join Prime Digital Earnings and start earning online with simple
+            tasks, referrals and smart opportunities.
+          </p>
 
-        <div className="hero__actions">
-          <a href="/register" className="btn btn--primary">
-            Register Now
-          </a>
-          <a href="/login" className="btn btn--secondary">
-            Login
-          </a>
+          <div className="cta-buttons">
+            <button className="btn-primary">
+              Get Started
+            </button>
+
+            <button className="btn-secondary">
+              Learn More
+            </button>
+          </div>
         </div>
       </div>
     </section>
