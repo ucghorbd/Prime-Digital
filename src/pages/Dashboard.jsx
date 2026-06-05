@@ -2,43 +2,39 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 function Dashboard() {
+  const cards = [
+    { title: "Main Balance", value: "৳ 0.00" },
+    { title: "Deposit Balance", value: "৳ 0.00" },
+    { title: "Total Referrals", value: "0" },
+    { title: "Active Status", value: "Inactive" }
+  ];
+
   return (
     <>
       <Navbar />
 
-      <main className="dashboard">
-        <div className="container">
-          <div className="section-header">
-            <span>Dashboard</span>
-            <h2>Welcome back</h2>
-            <p>
-              This is a placeholder dashboard shell for your future Firebase
-              data, wallet, referral, and admin modules.
-            </p>
-          </div>
-
-          <div className="dashboard-grid">
-            <div className="dashboard-card">
-              <h3>Main Balance</h3>
-              <p>৳ 0.00</p>
+      <main className="dashboard-page">
+        <section className="section">
+          <div className="container">
+            <div className="section-header">
+              <span>Dashboard</span>
+              <h2>Welcome back</h2>
+              <p>
+                This is a clean starter dashboard shell for future Firebase
+                integration, wallet data, referral data, and admin modules.
+              </p>
             </div>
 
-            <div className="dashboard-card">
-              <h3>Deposit Balance</h3>
-              <p>৳ 0.00</p>
-            </div>
-
-            <div className="dashboard-card">
-              <h3>Total Referrals</h3>
-              <p>0</p>
-            </div>
-
-            <div className="dashboard-card">
-              <h3>Notifications</h3>
-              <p>No new notifications</p>
+            <div className="dashboard-grid">
+              {cards.map((card) => (
+                <article key={card.title} className="dashboard-card">
+                  <h3>{card.title}</h3>
+                  <p>{card.value}</p>
+                </article>
+              ))}
             </div>
           </div>
-        </div>
+        </section>
       </main>
 
       <Footer />
