@@ -6,7 +6,9 @@ function ResetPassword() {
       <div style={styles.card}>
         <p style={styles.badge}>Prime Digital</p>
         <h1 style={styles.title}>Reset Password</h1>
-        <p style={styles.subtitle}>We will send a reset link to your email.</p>
+        <p style={styles.subtitle}>
+          Enter your email and we will send you a reset link.
+        </p>
 
         <form style={styles.form}>
           <label style={styles.label}>Email</label>
@@ -93,7 +95,9 @@ const styles = {
     cursor: "pointer"
   },
   links: {
-    marginTop: 18
+    marginTop: 18,
+    display: "flex",
+    justifyContent: "center"
   },
   link: {
     color: "#ffffff",
